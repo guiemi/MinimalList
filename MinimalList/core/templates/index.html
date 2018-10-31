@@ -1,1 +1,13 @@
 {% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        {% for task in tasks %}
+
+        Task nº{{ task.pk }}: {{ task.name }}
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
