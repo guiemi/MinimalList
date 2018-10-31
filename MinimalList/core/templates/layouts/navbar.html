@@ -1,0 +1,22 @@
+{% block navbar %}
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+
+    <div class="container">
+        <!-- Botões à esquerda -->
+        <ul class="navbar-nav">
+            <!-- Logo da VERT -->
+            <a class="navbar-brand" href="/">MinimalList</a>
+            <li class="nav-item {{ sobre_active }}">
+                <a class="nav-link" href="#">Barra de busca</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav">
+            <!-- Botões à direita -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nova nota</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endblock navbar %}
