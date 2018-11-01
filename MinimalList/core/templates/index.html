@@ -3,11 +3,24 @@
 {% block content %}
 <div class="container">
     <div class="jumbotron">
-        {% for task in tasks %}
+        <table>
+            <thead>
+                <th></th>
+            </thead>
+            <tbody>
+                {% for task in tasks %}
+                <tr>
+                    <th scope="row">[ X ]</th>
+                    <td>
+                        Tarefa nº{{ task.pk }}: {{ task.task_name }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
 
-        Task nº{{ task.pk }}: {{ task.name }}
 
-        {% endfor %}
+
     </div>
 </div>
 {% endblock content %}
