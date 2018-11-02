@@ -1,15 +1,17 @@
 {% block navbar %}
 <nav class="navbar navbar-expand navbar-dark bg-dark">
 
-    <div class="container">
+    <div class="container" style="height: 23px">
         <!-- Botões à esquerda -->
         <ul class="navbar-nav">
             <!-- Logo da VERT -->
             <a class="navbar-brand" href="/">MinimalList</a>
-            <li class="nav-item {{ sobre_active }}">
-                <a class="nav-link" href="#">Barra de busca</a>
-            </li>
-
+            
+            <!-- Barra de busca -->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca (não funciona ainda)" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </ul>
         <ul class="navbar-nav">
             <!-- Botões à direita -->
