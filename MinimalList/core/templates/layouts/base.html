@@ -15,16 +15,17 @@
 
 <body>
     {% include "layouts/navbar.html" %}
-
+    
     <div class="container">
         {% block title %} {% endblock title %}
-
+        
         {% block content %}{% endblock content %}
-
+        
         {% block style %}{% endblock style %}
-
+        
         {% block scripts %}{% endblock scripts %}
     </div>
+    {% include "layouts/sidebar.html" %}
 
 </body>
 

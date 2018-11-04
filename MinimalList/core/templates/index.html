@@ -1,26 +1,16 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
+
 <div class="container">
     <div class="jumbotron">
-        <table>
-            <thead>
-                <th></th>
-            </thead>
-            <tbody>
-                {% for task in tasks %}
-                <tr>
-                    <th scope="row">[ X ]</th>
-                    <td>
-                        Tarefa nº{{ task.pk }}: {{ task.task_name }}
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-
-
-
+        <ul>
+            {% for task in tasks %}
+            <li>
+                {{ task.task_name }}
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
 {% endblock content %}
