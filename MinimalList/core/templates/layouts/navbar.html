@@ -33,22 +33,25 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                <!-- Corpo da nota -->
-                                <div class="form-group">
-                                    <textarea name="" id="" cols="50" rows="5"></textarea>
-                                </div>
-                            </div>
 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-dark">Adicionar tarefa</button>
+                            <!-- Corpo da nota -->
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <!-- csrf token for basic security -->
+                                    <div class="inputContainer">
+                                        <input type="text" id="taskAdd" class="taskAdd" name="taskAdd" required>
+                                        <input class="btn btn-primary" type="submit" value="Submit">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </ul>
+
+    </div>
+    </ul>
     </div>
 
 
