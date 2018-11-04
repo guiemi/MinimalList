@@ -1,6 +1,6 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
-from core.models import Tasks
+from .models import Tasks
 
 
 def index(request):
@@ -9,3 +9,4 @@ def index(request):
     return render(request, 'index.html', {
         'tasks': tasks,
     })
+
