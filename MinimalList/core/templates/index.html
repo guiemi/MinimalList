@@ -3,6 +3,8 @@
 {% block content %}
 
 <div class="container">
+    <h3>Tarefas</h3>
+    <p>{{ today_date|date:'D, d M' }}</p>
     <div class="jumbotron">
         <ul>
             {% for task in tasks %}
