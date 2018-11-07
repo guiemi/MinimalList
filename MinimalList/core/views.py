@@ -19,9 +19,3 @@ def index(request):
             'tasks': tasks,
             'today_date': today_date,
         })
-
-
-# def new_task(request):
-#     add_task = Tasks(task_name = request.POST['new_task'])
-#     add_task.save()
-#     return HttpResponseRedirect('/')
