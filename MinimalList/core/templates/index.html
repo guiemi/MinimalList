@@ -4,26 +4,20 @@
 
 {% block content %}
 
-<div class="sidenav">
-    <a href="#">Projeto I</a>
-    <a href="#">Projeto II</a>
-    <a href="#">Projeto III</a>
-    <a href="#">Projeto IV</a>
-</div>
-
 <div class="main">
-    <h1>Conteúdo principal</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nobis rem. Enim assumenda voluptatibus expedita
-        neque in a praesentium laudantium suscipit rem! Modi corporis enim iure suscipit accusamus? Ipsam, veniam.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quos et officiis quaerat non rerum illum
-        doloremque facere alias impedit ullam, explicabo ducimus quas, nisi reprehenderit quis facilis. Quod, beatae!
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore a perferendis voluptas possimus suscipit
-        saepe accusamus corrupti amet assumenda. Temporibus quia cum distinctio neque ullam doloribus velit unde aut.
-    </p>
+    <div class="container">
+        <h3>Projeto [ ] </h3>
+        <div class="jumbotron">
+            <h1>Conteúdo principal</h1>
+
+            {% for task in tasks %}
+            <p> {{ task }}</p>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
 </div>
 
 {% endblock content %}
