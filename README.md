@@ -5,5 +5,5 @@ Personal project: a simple to-do list app written with Python 3 and Django 2.
 
 Estado atual da aplicação:
 
-![](https://github.com/guiemi/MinimalList/blob/master/Screenshots/Screenshot2018-11-1223.01.50.png)
+![](https://github.com/guiemi/MinimalList/blob/master/Screenshots/minimallist.png)
 
