@@ -8,30 +8,9 @@
     <a href="#"> {{ project }} </a>
     {% endfor %}
 
-    <div class="modal" tabindex="1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title" id="newprojectbrn">Novo Projeto</p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+    <hr>
 
-                <!-- Corpo do projeto-->
-                <div class="modal-body">
-                    <form action="" method="post">
-                        {% csrf_token %}
-                        <div class="inputContainer">
-                            <input type="text" id="projectAdd" class="projectAdd" name="ProjectAdd" required>
-                            <input class="btn btn-primary" type="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <p>Novo projeto</p>
 
 </div>
 
