@@ -2,7 +2,7 @@
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 5;
     left: 0;
     background-color: #343A40;
@@ -28,7 +28,7 @@
     text-decoration: none;
     font-size: 15px;
     color: #818181;
-    display: ;
+    display: block;
 
 }
 
