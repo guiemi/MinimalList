@@ -47,12 +47,12 @@
     padding: 0px 10px;
 }
 
-/* .half-rule { 
+ .half-rule { 
     margin-left: 0;
     text-align: left;
     width: 50%;
- } */
-
- #examplemodal {
-     z-index: 999 !important;
  }
+
+#examplemodal {
+    z-index: 999 !important;
+  }
