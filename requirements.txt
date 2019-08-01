@@ -1,6 +1,6 @@
 astroid==2.2.5
 beautifulsoup4==4.8.0
-Django==2.2.2
+Django==2.2.3
 django-livereload-server==0.3.2
 isort==4.3.20
 lazy-object-proxy==1.4.1
